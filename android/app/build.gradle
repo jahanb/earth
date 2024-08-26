@@ -1,0 +1,20 @@
+android {
+    compileSdkVersion 31 // or your project's SDK version
+
+    defaultConfig {
+        applicationId "com.earth"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        // other configurations
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
